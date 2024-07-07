@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": "1719421136942",
+      "firstName": "Fred",
+      "lastName": "Margaryan",
+      "age": "21",
+      "nickname": "Margaryanoff",
+      "password": "aaaa",
+      "gender": "Male",
+      "email": "fredmargaryan@gmail.com",
+      "bio": "",
+      "birthdayDate": "",
+      "loginDate": "2024-5-26",
+      "shopping": [
+        {
+          "id": "",
+          "itemName": "",
+          "itemPrice": "",
+          "itemPainter": "",
+          "itemDate": ""
+        }
+      ],
+      "whishlist": [
+        {
+          "id": "",
+          "itemName": "",
+          "itemPrice": "",
+          "itemPainter": "",
+          "itemDate": ""
+        }
+      ],
+      "interests": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "1719632753554",
+      "firstName": "Fred",
+      "lastName": "Margaryan",
+      "age": "21",
+      "nickname": "Margaryanofff",
+      "password": "aaaa",
+      "gender": "Male",
+      "email": "fredmargaryan@gmail.com",
+      "bio": "",
+      "birthdayDate": "2024-06-06",
+      "loginDate": "2024-5-29",
+      "shopping": [
+        {
+          "id": "",
+          "itemName": "",
+          "itemPrice": "",
+          "itemPainter": "",
+          "itemDate": ""
+        }
+      ],
+      "whishlist": [
+        {
+          "id": "",
+          "itemName": "",
+          "itemPrice": "",
+          "itemPainter": "",
+          "itemDate": ""
+        }
+      ],
+      "interests": [
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "singleUser": [],
+  "feed": []
+}

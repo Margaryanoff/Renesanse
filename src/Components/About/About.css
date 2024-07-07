@@ -1,0 +1,397 @@
+.about_main {
+    min-height: 100vh;
+    background: var(--main-color);
+    position: relative;
+    padding-top: 90px;
+    .about_paths {
+        border: 3px solid white;
+        border-radius: 21px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 20px;
+        top: 40%;
+        overflow: hidden;
+        a {
+            background: rgba(0, 0, 0, 0.388);
+            padding: 10px;
+            color: white;
+            font-size: 23px;
+            gap: 30px;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.2s;
+            align-items: center;
+            svg {
+                color: white;
+                transition: 0.2s;
+            }
+            &:hover {
+                background: transparent;
+                color: rgba(0, 0, 0);
+                transition: 0.2s;
+            }
+            &:hover svg {
+                transform: translateX(40px);
+                transition: 0.2s;
+            }
+        }
+    }
+    .aboutUs_main_div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .aboutUs_title {
+            padding: 23px;
+            background: url("../Gallery//images//davo.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            min-height: 300px;
+            h1 {
+                color: white;
+                letter-spacing: 2px;
+            }
+            .background_aboutUs {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                aspect-ratio: 1/1;
+                background: rgba(0, 0, 0, 0.438);
+                inset: 0;
+            }
+            .aboutUs_root {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+            p {
+                z-index: 9;
+                font-family: "Poppins";
+                color: white;
+                z-index: 999;
+                width: 60%;
+                margin: 20px auto;
+                font-size: 18px;
+                span {
+                    font-family: "Fancy";
+                    font-size: 34px;
+                    padding: 0 5px;
+                }
+            }
+        }
+        .unique {
+            border-radius: 18px;
+            background: rgba(0, 0, 0, 0.438);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 50px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                aspect-ratio: 1/1;
+                inset: 0;
+                z-index: 0;
+                background: url("../Gallery//images//gallery18.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            > strong {
+                color: white;
+                letter-spacing: 2px;
+                text-align: center;
+                font-size: 34px;
+                z-index: 99;
+                background: rgba(0, 0, 0, 0.388);
+                padding: 20px 0;
+            }
+            img {
+                width: 90px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+            }
+            .uniqueCards {
+                color: white;
+                position: relative;
+                z-index: 9;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 5px;
+                    background: var(--main-color);
+                    left: 50%;
+                }
+                > div {
+                    background: rgba(0, 0, 0, 0.388);
+                    padding: 30px 20px;
+                    width: 100%;
+                    > div {
+                        background: rgba(0, 0, 0, 0.588);
+                        padding: 18px;
+                        border-radius: 19px;
+                        width: 45%;
+                        box-shadow: 0 0 8px var(--main-color);
+                        p {
+                            margin: 12px 0;
+                        }
+                        a {
+                            font-size: 23px;
+                            color: var(--main-color);
+                            transition: 0.2s;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                bottom: -6px;
+                                background: var(--main-color);
+                                scale: 0;
+                                transition: 0.2s;
+                            }
+                            &:hover::before {
+                                scale: 1;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+                span {
+                    position: absolute;
+                    left: 47%;
+                }
+            }
+            .rightUnique {
+                margin-left: auto;
+                text-align: right;
+            }
+        }
+    }
+    .ourVision_main_div {
+        .ourVisions_root {
+            background: url("../Gallery//images//gallery14.webp");
+            background-position: center;
+            border-radius: 18px;
+            overflow: hidden;
+            background-size: cover;
+            h1,
+            p {
+                background: rgba(0, 0, 0, 0.358);
+                color: white;
+                text-align: center;
+            }
+            h1 {
+                padding-top: 40px;
+            }
+            p {
+                padding-bottom: 40px;
+                span {
+                    margin: auto;
+                    width: 60%;
+                    display: block;
+                    font-family: "Poppins";
+                    strong {
+                        font-family: "Fancy";
+                        font-size: 34px;
+                        padding: 0 5px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        .ourvision_parent {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            strong {
+                font-size: 23px;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            .vision_cards_main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 40px;
+                align-items: center;
+                margin-top: 40px;
+                div {
+                    box-shadow: 0 0 8px black;
+                    width: 30%;
+                    overflow: hidden;
+                    border-radius: 18px;
+                    color: white;
+                    p,
+                    h2 {
+                        background: rgba(0, 0, 0, 0.638);
+                        padding: 23px;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .join_path_vision {
+                margin: 40px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 23px;
+                align-items: center;
+                div {
+                    display: flex;
+                    gap: 20px;
+                    a {
+                        border: 2px solid transparent;
+                        padding: 5px 40px;
+                        background: white;
+                        color: var(--main-color);
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                        transition: 0.2s;
+                        &:hover {
+                            background: transparent;
+                            color: white;
+                            border: 2px solid white;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .offering_title {
+        background: url("../../images/login.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        border-radius: 18px;
+        overflow: hidden;
+        p {
+            strong {
+                width: 60%;
+                display: block;
+                margin: auto;
+            }
+        }
+        p,
+        h1 {
+            background: rgba(0, 0, 0, 0.458);
+            color: white;
+        }
+        p {
+            padding: 30px 0;
+            letter-spacing: 2px;
+            font-size: 19px;
+            span {
+                font-size: 32px;
+                font-family: "Fancy";
+            }
+        }
+        h1 {
+            padding-top: 40px;
+        }
+    }
+    .offering_cards_parent {
+        background: rgba(0, 0, 0, 0.433);
+        border-radius: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 60px;
+        padding: 22px;
+        div {
+            box-shadow: 0 0 10px transparent;
+            transition: 0.2s;
+            width: 23%;
+            border: 2px solid;
+            position: relative;
+            padding: 0 12px;
+            border-radius: 18px;
+            background: rgba(0, 0, 0, 0.538);
+            padding-top: 20px;
+            margin: 20px 0;
+            color: white;
+            cursor: pointer;
+            span {
+                position: absolute;
+                top: -20%;
+                left: 10px;
+                transition: 0.2s;
+            }
+            h2 {
+                margin-bottom: 10px;
+            }
+            &:hover {
+                box-shadow: 0 0 10px white;
+                scale: 1.03;
+            }
+            &:hover span {
+                left: 80%;
+                transition: 0.2s;
+            }
+        }
+        img {
+            width: 50px;
+            background: white;
+            border-radius: 50%;
+            padding: 3px;
+        }
+    }
+    .joinus_main {
+        .joinUs_title {
+            background: url("../Gallery//images//gallery19.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            border-radius: 18px;
+            overflow: hidden;
+            p {
+                strong {
+                    width: 60%;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            p,
+            h1 {
+                background: rgba(0, 0, 0, 0.458);
+                color: white;
+            }
+            p {
+                padding: 30px 0;
+                letter-spacing: 2px;
+                font-size: 19px;
+                span {
+                    font-size: 32px;
+                    font-family: "Fancy";
+                }
+            }
+            h1 {
+                padding-top: 40px;
+            }
+        }
+        .joinus_cards_main {
+            display: flex;
+            gap: 30px;
+            text-align: center;
+            margin: 30px 0;
+            div {
+                background: rgba(0, 0, 0, 0.347);
+                border-radius: 18px;
+                h2,
+                p {
+                    padding: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

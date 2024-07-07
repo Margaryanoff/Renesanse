@@ -1,0 +1,108 @@
+.home_header {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Fancy";
+    }
+    .home_main_div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .home_about {
+            width: 34%;
+            border: 4px solid white;
+            background: rgba(0, 0, 0, 0.529);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 500px;
+            border-radius: 20px;
+            padding: 30px;
+            strong {
+                text-align: center;
+                color: white;
+                font-size: 23px;
+                line-height: 1.4;
+                margin: auto;
+            }
+            div {
+                display: flex;
+                gap: 12px;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                a {
+                    color: rgb(115, 105, 66);
+                    font-size: 21px;
+                    background: white;
+                    padding: 5px 31px;
+                    letter-spacing: 2px;
+                    border-radius: 9px;
+                    border: 2px solid transparent;
+                    transition: 0.2s;
+                    &:hover {
+                        color: white;
+                        background: transparent;
+                        border: 2px solid white;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+        .gallery_port {
+            width: 40%;
+            border: 4px solid white;
+            background: rgba(0, 0, 0, 0.529);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 21px;
+            min-height: 500px;
+            border-radius: 20px;
+            padding: 30px;
+            h2 {
+                color: white;
+                font-size: 32px;
+                margin-bottom: 12px;
+            }
+            img {
+                width: 200px;
+                border-radius: 30px;
+                border: 3px solid rgb(115, 105, 66);
+            }
+            h4 {
+                font-size: 28px;
+                color: white;
+            }
+            p {
+                color: white;
+                text-align: center;
+                font-size: 23px;
+                line-height: 1.4;
+                margin: auto;
+            }
+            a {
+                color: rgb(115, 105, 66);
+                font-size: 21px;
+                background: white;
+                padding: 5px 31px;
+                letter-spacing: 2px;
+                border-radius: 9px;
+                border: 2px solid transparent;
+                transition: 0.2s;
+                &:hover {
+                    color: white;
+                    background: transparent;
+                    border: 2px solid white;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}

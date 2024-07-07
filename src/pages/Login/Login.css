@@ -1,0 +1,149 @@
+.login_header {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: url("../../images//login.jpg");
+    background-position: left bottom;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 1/1;
+        background: rgb(0, 0, 0, 0.5);
+        inset: 0;
+    }
+    h1 {
+        letter-spacing: 1px;
+    }
+    .login_main {
+        z-index: 999999;
+        border: 2px solid white;
+        box-shadow: 0 0 10px white;
+        border-radius: 30px;
+        display: flex;
+        max-height: 80vh;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: rgb(255, 255, 255, 0.01);
+            inset: 0;
+        }
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+        > div {
+            width: 50%;
+        }
+        .login_form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 30px;
+            gap: 30px;
+            position: relative;
+            h1 {
+                color: white;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            label {
+                width: 60%;
+                position: relative;
+                > p {
+                    color: white;
+                    font-size: 19px;
+                }
+                div {
+                    position: absolute;
+                    right: 0%;
+                    top: 25%;
+                    font-size: 19px;
+                    color: red;
+                    font-family: "Poppins";
+                    text-shadow: 0 0 5px red;
+                    background: white;
+                    padding: 0 10px;
+                    border-radius: 7px;
+                }
+            }
+            input {
+                font-family: "Primary";
+                outline: none;
+                padding: 5px;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid white;
+                color: white;
+                font-size: 15px;
+                width: 100%;
+                &::placeholder {
+                    color: white;
+                    font-size: 15px;
+                }
+                &:-webkit-autofill {
+                    background-color: transparent !important;
+                }
+            }
+            button {
+                color: rgb(115, 105, 66);
+                font-size: 16px;
+                background: white;
+                padding: 3px 15px;
+                letter-spacing: 2px;
+                border-radius: 9px;
+                border: 2px solid transparent;
+                cursor: pointer;
+                transition: 0.2s;
+                float: right;
+                margin-top: 20px;
+                &:hover {
+                    color: white;
+                    background: transparent;
+                    border: 2px solid white;
+                    transition: 0.2s;
+                }
+            }
+        }
+        .submitButton {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                color: white;
+                font-size: 17px;
+                a {
+                    color: wheat;
+                    font-weight: bolder;
+                    position: relative;
+                    overflow: hidden;
+                    padding-bottom: 6px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background: wheat;
+                        bottom: 0;
+                        scale: 0;
+                        transition: 0.2s;
+                        transform-origin: left;
+                    }
+                    &:hover::before {
+                        scale: 1;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}

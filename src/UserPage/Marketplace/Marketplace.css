@@ -1,0 +1,39 @@
+.marketplcae_main {
+    background: rgb(75, 70, 51);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 2/1;
+        background: var(--main-color);
+        transform: rotate(45deg);
+        left: -70%;
+        bottom: -20%;
+        z-index: 9;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 2/1;
+        background: var(--main-color);
+        transform: rotate(45deg);
+        right: -70%;
+        top: -20%;
+    }
+    .dzerner {
+        background: url("../../images//dzerner.png");
+        background-position: top;
+        background-size: cover;
+        height: 50vh;
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        rotate: -40deg;
+    }
+}

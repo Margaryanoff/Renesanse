@@ -1,0 +1,127 @@
+.navigation_before_register {
+    position: absolute;
+    width: 100%;
+    top: 12px;
+    z-index: 99999999999;
+    img {
+        width: 120px;
+    }
+    .nav_div_main {
+        padding: 8px;
+        border-radius: 7px;
+        background: rgb(212, 200, 154);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            display: flex;
+            gap: 12px;
+            a {
+                color: black;
+                position: relative;
+                transition: 0.2s;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    scale: 0;
+                    transition: 0.2s;
+                    transform-origin: center;
+                    background: black;
+                }
+                &:hover::before {
+                    scale: 1;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+    .active {
+        border-bottom: 1px solid black;
+    }
+}
+.user_navigation {
+    padding: 5px 20px;
+    position: absolute;
+    width: 100%;
+    top: 12px;
+    z-index: 99999999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .div_logo_username_nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img {
+            width: 200px;
+        }
+    }
+    ul {
+        display: flex;
+        gap: 21px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    img {
+        background: rgba(183, 174, 137, 0.601);
+        border-radius: 9px;
+        transition: 0.2s;
+        &:hover {
+            background: var(--main-color);
+            transition: 0.2s;
+        }
+    }
+    a {
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s;
+        padding: 3px 0;
+        display: inline-block;
+        border-radius: 8px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: white;
+            bottom: 0;
+            transform: translateX(-100%);
+            transition: 0.3s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: white;
+            left: 0;
+            top: 0;
+            transform: translateX(100%);
+            transition: 0.3s;
+        }
+        &:hover::before {
+            transform: translateX(0);
+            transition: 0.3s;
+        }
+        &:hover::after {
+            transform: translateX(0);
+            transition: 0.3s;
+        }
+    }
+    .wishlist_favorites {
+        display: flex;
+        gap: 21px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        button {
+            background: transparent;
+            border: none;
+            font-size: 18px;
+            font-family: "Primary";
+        }
+    }
+}

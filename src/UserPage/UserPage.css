@@ -1,0 +1,79 @@
+.userPage_main {
+    background: url("../images//italianrenesanse.png") fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    section {
+        padding: 100px 30px;
+    }
+    .userPage_user_section {
+        flex: 0.25;
+        .userPage_userInfo_root {
+            background: url("../images/imageRen.png");
+            background-position: top left;
+            padding: 21px;
+            border: 2px solid white;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            img {
+                width: 60px;
+                border-radius: 50%;
+                border: 2px solid white;
+            }
+            .name_nickname {
+                display: flex;
+                align-items: flex-end;
+                gap: 20px;
+                h1 {
+                    color: white;
+                }
+            }
+            .wishlist_favs {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                span,
+                a {
+                    transition: 0.2s;
+                    position: relative;
+                    display: flex;
+                    gap: 5px;
+                    letter-spacing: 1px;
+                    color: white;
+                    strong {
+                        border: 2px solid white;
+                        position: absolute;
+                        right: -10px;
+                        top: -10px;
+                        font-size: 10px;
+                        width: 19px;
+                        aspect-ratio: 1/1;
+                        display: grid;
+                        place-items: center;
+                        background: white;
+                        color: var(--main-color);
+                        border-radius: 50%;
+                        font-family: "Poppins";
+                        transition: 0.2s;
+                    }
+                    &:hover strong {
+                        background: var(--main-color);
+                        scale: 1.4;
+                        transition: 0.2s;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .userPage_content {
+        flex: 0.5;
+    }
+    .userPage_ads_more {
+        flex: 0.25;
+    }
+}

@@ -1,0 +1,442 @@
+.profile_header_main {
+    background: rgb(75, 70, 51);
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 2/1;
+        background: var(--main-color);
+        transform: rotate(45deg);
+        left: -70%;
+        bottom: -20%;
+    }
+    .edit_info {
+        height: 100vh;
+        width: 40%;
+        border: 12px solid var(--main-color);
+        background-position: center left;
+        background-size: cover;
+        position: absolute;
+        right: 0%;
+        border-radius: 50% 0 0 0;
+        background: rgba(0, 0, 0, 0.485);
+        display: grid;
+        place-items: center;
+        .edit_info_main_div {
+            width: 90%;
+            .edit_title {
+                justify-content: space-around;
+                display: flex;
+                align-items: center;
+                h2 {
+                    color: white;
+                    font-size: 45px;
+                    font-family: "Fancy";
+                    letter-spacing: 3px;
+                }
+                svg {
+                    cursor: pointer;
+                    border-radius: 7px;
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                    background: var(--main-color);
+                }
+            }
+        }
+        form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .edit_names {
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                label {
+                    position: relative;
+                    flex: 1;
+                    input {
+                        padding: 8px;
+                        width: 90%;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 3px solid var(--main-color);
+                        border-left: 3px solid var(--main-color);
+                        outline: none;
+                        box-shadow: 0px 3px 3px var(--main-color);
+                        font-size: 15px;
+                        color: var(--main-color);
+                    }
+                    p {
+                        color: white;
+                        font-size: 17px;
+                        letter-spacing: 1px;
+                        margin-left: 10px;
+                    }
+                    h6 {
+                        position: absolute;
+                        right: 15%;
+                        top: 20%;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        color: red;
+                        background: var(--main-color);
+                        padding: 4px 10px;
+                    }
+                }
+            }
+            .nikcname_bio {
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                margin: 30px 0;
+                label {
+                    position: relative;
+                }
+                div {
+                    flex: 1;
+                    input {
+                        padding: 8px;
+                        width: 90%;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 3px solid var(--main-color);
+                        border-left: 3px solid var(--main-color);
+                        outline: none;
+                        box-shadow: 0px 3px 3px var(--main-color);
+                        font-size: 15px;
+                        color: var(--main-color);
+                    }
+                    p {
+                        color: white;
+                        font-size: 17px;
+                        letter-spacing: 1px;
+                        margin-left: 10px;
+                    }
+                    h6 {
+                        position: absolute;
+                        right: 15%;
+                        top: 20%;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        color: red;
+                        background: var(--main-color);
+                        padding: 4px 10px;
+                    }
+                }
+                .nikcname_email {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+                .bio_textarea {
+                    position: relative;
+                    textarea {
+                        padding: 10px;
+                        background: transparent;
+                        border: none;
+                        border-left: 3px solid var(--main-color);
+                        border-bottom: 3px solid var(--main-color);
+                        box-shadow: 0px 3px 3px var(--main-color);
+                        color: var(--main-color);
+                        font-size: 15px;
+                        outline: none;
+                        &::placeholder {
+                            color: white;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .password_field {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                h3 {
+                    font-family: "Fancy";
+                    letter-spacing: 2px;
+                    font-size: 34px;
+                    color: white;
+                }
+                div {
+                    flex: 1;
+                }
+                .passwords_manage {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .old_password_submit {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 30px;
+                    label {
+                        position: relative;
+                        width: 90%;
+                    }
+                    h6 {
+                        position: absolute;
+                        right: 2%;
+                        top: 20%;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        color: red;
+                        background: var(--main-color);
+                        padding: 4px 10px;
+                    }
+                    button {
+                        width: 90%;
+                        padding: 10px;
+                        background: transparent;
+                        border: 3px solid var(--main-color);
+                        color: white;
+                        font-size: 18px;
+                        font-family: "Fancy";
+                        letter-spacing: 2px;
+                        cursor: pointer;
+                        transition: 0.2s;
+                        &:hover {
+                            background: var(--main-color);
+                            color: white;
+                            transition: 0.2s;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 3px solid var(--main-color);
+                        border-left: 3px solid var(--main-color);
+                        outline: none;
+                        box-shadow: 0px 3px 3px var(--main-color);
+                        font-size: 15px;
+                        color: var(--main-color);
+                        padding: 8px;
+                    }
+                    p {
+                        color: white;
+                        font-size: 17px;
+                        letter-spacing: 1px;
+                        margin-left: 10px;
+                    }
+                }
+                .new_password {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    label {
+                        position: relative;
+                    }
+                    input {
+                        padding: 8px;
+                        width: 90%;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 3px solid var(--main-color);
+                        border-left: 3px solid var(--main-color);
+                        outline: none;
+                        box-shadow: 0px 3px 3px var(--main-color);
+                        font-size: 15px;
+                        color: var(--main-color);
+                    }
+                    p {
+                        color: white;
+                        font-size: 17px;
+                        letter-spacing: 1px;
+                        margin-left: 10px;
+                    }
+                    h6 {
+                        position: absolute;
+                        right: 15%;
+                        top: 20%;
+                        font-size: 14px;
+                        font-family: "Poppins";
+                        color: red;
+                        background: var(--main-color);
+                        padding: 4px 10px;
+                    }
+                }
+            }
+        }
+    }
+    .creation {
+        background: url("../../images/rome-italy-march-creation-adam-michelangelo-s-frescoes-sistine-chapel-rome-italy-march-creation-adam-michelangelo-s-237632972.webp");
+        height: 100vh;
+        width: 40%;
+        border: 12px solid var(--main-color);
+        background-position: center left;
+        background-size: cover;
+        position: absolute;
+        right: 0%;
+        border-radius: 50% 0 0 0;
+        z-index: 10;
+    }
+    .user_main_div {
+        border-radius: 0 60px 0 0;
+        padding: 10px;
+        width: 50%;
+        transform: translateY(200px);
+        background: rgba(245, 222, 179, 0.272);
+        img {
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid var(--main-color);
+        }
+        .pfp_image {
+            padding: 13px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            div {
+                display: flex;
+                align-items: flex-end;
+                gap: 15px;
+            }
+            h1 {
+                font-family: "Fancy";
+                letter-spacing: 3px;
+                color: var(--main-color);
+            }
+            svg {
+                color: var(--main-color);
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .burger_menu {
+            position: relative;
+            cursor: pointer;
+            ul {
+                overflow: hidden;
+                width: 150px;
+                position: absolute;
+                border: 1px solid var(--main-color);
+                left: -417%;
+                top: 20%;
+                background: var(--main-color);
+                border-radius: 9px 0 9px 9px;
+                background: rgb(75, 70, 51);
+                transition: 0.3s;
+                transform-origin: top right;
+                scale: 0;
+                li {
+                    background: rgb(75, 70, 51);
+                }
+                a {
+                    letter-spacing: 1px;
+                    display: block;
+                    padding: 2px 9px;
+                    font-size: 17px;
+                    color: white;
+                    transition: 0.2s;
+                    background: var(--main-color);
+                    position: relative;
+                    p {
+                        display: inline-block;
+                    }
+                    span {
+                        font-family: sans-serif;
+                        font-size: 13px;
+                        margin-left: 30px;
+                    }
+                    &:hover {
+                        transform: translateX(10px);
+                        transition: 0.2s;
+                        background: rgb(75, 70, 51);
+                    }
+                }
+            }
+            &:hover ul {
+                scale: 1;
+                transition: 0.3s;
+            }
+        }
+    }
+    .active_modal {
+        scale: 1 !important;
+        transition: 0.3s !important;
+    }
+    h4 {
+        text-align: center;
+        margin: 3px auto;
+        color: white;
+        letter-spacing: 2px;
+        font-family: "Poppins";
+        font-size: 12px;
+    }
+    .personal {
+        border-radius: 0 40px 0 0;
+        cursor: default;
+        margin-top: 16px;
+        background: var(--main-color);
+        box-shadow: 0 0 5px wheat;
+        border: 2px solid white;
+        padding: 11px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        p {
+            padding: 6px 0;
+            transition: 0.3s;
+            &:hover {
+                transform: translateX(30px);
+                transition: 0.3s;
+            }
+        }
+        h4 {
+            display: flex;
+            align-items: center;
+            color: black;
+            margin: 0;
+            span {
+                margin: 0 4px;
+            }
+        }
+        .personal_paths {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            a {
+                display: inline-block;
+                overflow: hidden;
+                position: relative;
+                padding: 4px 14px;
+                border: 2px solid white;
+                color: white;
+                background: rgb(75, 70, 51);
+                transition: 0.2s;
+                svg {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 25px);
+                    top: -2px;
+                    width: 30px;
+                    height: 30px;
+                }
+                span {
+                    transition: 0.2s;
+                    display: inline-block;
+                }
+                &:hover span {
+                    transform: translateY(30px);
+                    transition: 0.2s;
+                }
+                &:hover svg {
+                    transform: translate(-50%, 0);
+                    transition: 0.2s;
+                }
+                &:hover {
+                    background: transparent;
+                    color: rgb(75, 70, 51);
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
